@@ -21,9 +21,9 @@ class MenuSection extends StatelessWidget {
           title: sectionMenuTitleStr,
           subTitle: sectionMenuSubTitleStr,
         ),*/
-        Padding(
-          padding: responsiveApp.edgeInsetsApp.vrtExLargeEdgeInsets,
-          child: RichText(
+        /*Padding(
+          padding: responsiveApp.edgeInsetsApp.vrtExLargeEdgeInsets,*/
+           RichText(
             textAlign: TextAlign.center,
             text: TextSpan(
               style: const TextStyle(
@@ -43,7 +43,7 @@ class MenuSection extends StatelessWidget {
               ],
             ),
           ),
-        ),
+        /*),*/
         Padding(
           padding: responsiveApp.edgeInsetsApp.onlySmallTopEdgeInsets,
           child: Row(

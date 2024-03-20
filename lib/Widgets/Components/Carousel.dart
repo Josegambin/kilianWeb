@@ -19,15 +19,18 @@ class _CarouselState extends State<Carousel> {
   List<Widget> generateImageTiles() {
     return carousel
         .map(
-          (element) => ClipRRect(
-            borderRadius:
-                BorderRadius.circular(responsiveApp.carouselRadiusWidth),
-            child: Image.asset(
-              element.image,
-              fit: BoxFit.cover,
-            ),
+          (element) => Container(
+        margin: EdgeInsets.only(top: 20.0), // Ajusta el valor según lo que necesites
+        child: ClipRRect(
+          borderRadius:
+          BorderRadius.circular(responsiveApp.carouselRadiusWidth),
+          child: Image.asset(
+            element.image,
+            fit: BoxFit.cover,
           ),
-        )
+        ),
+      ),
+    )
         .toList();
   }
 
