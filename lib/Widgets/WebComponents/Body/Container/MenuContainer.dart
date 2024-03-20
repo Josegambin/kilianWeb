@@ -32,8 +32,8 @@ class _MenuCardState extends State<MenuCard> {
               ClipRRect(
                 borderRadius: BorderRadius.circular(12.0),
                 child: Container(
-                  width: responsiveApp.menuImageWidth,
-                  height: responsiveApp.menuImageHeight,
+                 // width: responsiveApp.menuImageWidth,
+                  //height: responsiveApp.menuImageHeight,
                   child: Image.asset(
                     menu[widget.index].image,
                     fit: BoxFit.cover,
@@ -45,7 +45,7 @@ class _MenuCardState extends State<MenuCard> {
                 left: 0,
                 right: 0,
                 child: Container(
-                  padding: const EdgeInsets.all(8.0),
+                  //padding: const EdgeInsets.all(8.0),
                   color: Colors.black.withOpacity(0.0), // Puedes ajustar la opacidad y el color de fondo según tus preferencias
                   child: Text(
                     menu[widget.index].title,

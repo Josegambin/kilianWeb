@@ -1,6 +1,5 @@
 import 'package:flutter/material.dart';
 import 'package:scroll_to_index/scroll_to_index.dart';
-import 'package:web_kilian/Widgets/WebComponents/Body/MenuSection.dart';
 import 'package:web_kilian/Widgets/WebComponents/Body/SectionList.dart';
 
 import '../Util/Keys.dart';
