@@ -17,10 +17,10 @@ class MenuSection extends StatelessWidget {
     responsiveApp = ResponsiveApp(context);
     return Column(
       children: [
-        SectionContainer(
+       /* SectionContainer(
           title: sectionMenuTitleStr,
           subTitle: sectionMenuSubTitleStr,
-        ),
+        ),*/
         Padding(
           padding: responsiveApp.edgeInsetsApp.vrtExLargeEdgeInsets,
           child: RichText(
