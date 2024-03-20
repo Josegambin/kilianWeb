@@ -31,7 +31,7 @@ class MenuSection extends StatelessWidget {
                 color: Colors.white,
               ),
               children: [
-                TextSpan(
+              /*  TextSpan(
                   text: historiaEmpresa,
                   style: const TextStyle(
                     fontFamily:
@@ -39,7 +39,7 @@ class MenuSection extends StatelessWidget {
                     fontWeight: FontWeight.normal,
                     color: Colors.black
                   ),
-                ),
+                ),*/
               ],
             ),
           ),

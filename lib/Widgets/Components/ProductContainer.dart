@@ -22,12 +22,12 @@ class ProductContainer extends StatelessWidget {
           //height: 300.0,
           decoration: BoxDecoration(
             borderRadius: BorderRadius.circular(21.0),
-            image: DecorationImage(
+            /*image: DecorationImage(
               colorFilter: ColorFilter.linearToSrgbGamma(),
               image: AssetImage(product.image),
               
-              fit: BoxFit.cover,
-            ),
+              //fit: BoxFit.cover,
+            ),*/
           ),
           child: Center(
             // Centrar el contenido verticalmente
