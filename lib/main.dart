@@ -8,7 +8,7 @@ void main() {
 }
 
 class MyApp extends StatefulWidget {
-  const MyApp({super.key});
+  const MyApp({Key? key}) : super(key: key);
 
   @override
   State<MyApp> createState() => _MyAppState();
@@ -26,57 +26,57 @@ class _MyAppState extends State<MyApp> {
   Widget build(BuildContext context) {
     return MaterialApp(
       title: "HORTALIZAS KILIAN JOSE",
-      //Elimina la etique debug de la parte superior derecha.
+      //Elimina la etiqueta de depuración de la parte superior derecha.
       debugShowCheckedModeBanner: false,
-
       builder: (context, child) {
         responsiveApp = ResponsiveApp(context);
 
         return Theme(
-            data: ThemeData(
-              //backgroundColor: Colors.lightGreen[900],
-              // Color de fondo
-              primaryColor: Colors.black87,
-              // color appBar
-              // accentColor: Colors.blueGrey // propiedad de constrate con el fondo para el boton de volver arriba
-              //hintColor: Colors.blueGrey,
-
-              //Icono de appBar
-              iconTheme: const IconThemeData(color: Colors.white),
-              cardColor: Colors.blue,
-              primaryTextTheme: getTextTheme(),
-              textTheme: getTextTheme(),
-              indicatorColor: Colors.blue,
-              //barra de indicador de los iconos
-              unselectedWidgetColor: Colors.blueGrey[300],
-              //color texto tabbar e indicar si no esta seleccionado
-              tabBarTheme: TabBarTheme(
-                labelColor: Colors.white,
-                unselectedLabelColor: Colors.blueGrey[300],
-              ),
+          data: ThemeData(
+            primaryColor: Colors.black87,
+            iconTheme: const IconThemeData(color: Colors.white),
+            cardColor: Colors.blue,
+            primaryTextTheme: getTextTheme(),
+            textTheme: getTextTheme(),
+            indicatorColor: Colors.blue,
+            unselectedWidgetColor: Colors.blueGrey[300],
+            tabBarTheme: TabBarTheme(
+              labelColor: Colors.white,
+              unselectedLabelColor: Colors.blueGrey[300],
             ),
-            child: HomePage());
+          ),
+          child: Scaffold(
+            appBar: AppBar(
+              title: Text("HORTALIZAS KILIAN JOSE"),
+            ),
+            body: RefreshIndicator(
+              onRefresh: _refreshData,
+              child: HomePage(),
+            ),
+          ),
+        );
       },
     );
   }
 
+  Future<void> _refreshData() async {
+    // Aquí puedes realizar las operaciones de actualización de datos, como hacer llamadas a la API, etc.
+    // Espera hasta que la actualización esté completa (si es asíncrona).
+  }
+
   getTextTheme() {
     return TextTheme(
-      // headline3
       displaySmall:
-          TextStyle(color: Colors.black, fontSize: responsiveApp.headline3),
-      //headline6
+      TextStyle(color: Colors.black, fontSize: responsiveApp.headline3),
       titleLarge:
-          TextStyle(color: Colors.black, fontSize: responsiveApp.headline6),
-      //bodytext1
+      TextStyle(color: Colors.black, fontSize: responsiveApp.headline6),
       bodyLarge:
-          TextStyle(color: Colors.black, fontSize: responsiveApp.bodyText1),
-      //bodytext2
+      TextStyle(color: Colors.black, fontSize: responsiveApp.bodyText1),
       bodyMedium:
-          TextStyle(color: Colors.white, fontSize: responsiveApp.bodyText1),
+      TextStyle(color: Colors.white, fontSize: responsiveApp.bodyText1),
       displayMedium: TextStyle(
         color: Colors.white,
-        fontSize: responsiveApp.headline2
+        fontSize: responsiveApp.headline2,
       ),
     );
   }
