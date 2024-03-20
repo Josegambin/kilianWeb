@@ -29,6 +29,8 @@
     <!-- Favicon -->
     <link rel="icon" type="image/png" href="favicon.png"/>
     <script src='https://api.mapbox.com/mapbox-gl-js/v2.8.2/mapbox-gl.js'></script>
+    <script src="main.dart.js" type="application/javascript"></script>
+
     <title>web_kilian</title>
     <link rel="manifest" href="manifest.json">
 
@@ -41,6 +43,17 @@
     <script src="flutter.js" defer></script>
 </head>
 <body>
+
+<script>
+  if ('serviceWorker' in navigator) {
+    navigator.serviceWorker.getRegistration().then(function(registration) {
+      if (registration) {
+        registration.unregister();
+      }
+    });
+  }
+</script>
+
 <script>
     window.addEventListener('load', function(ev) {
       // Download main.dart.js
