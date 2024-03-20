@@ -25,7 +25,7 @@ class _MyAppState extends State<MyApp> {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
-      title: "HORTALIZAS KILIAN JOSE",
+      //title: "HORTALIZAS KILIAN JOSE",
       //Elimina la etiqueta de depuración de la parte superior derecha.
       debugShowCheckedModeBanner: false,
       builder: (context, child) {
@@ -46,9 +46,7 @@ class _MyAppState extends State<MyApp> {
             ),
           ),
           child: Scaffold(
-            appBar: AppBar(
-              title: Text("HORTALIZAS KILIAN JOSE"),
-            ),
+
             body: RefreshIndicator(
               onRefresh: _refreshData,
               child: HomePage(),

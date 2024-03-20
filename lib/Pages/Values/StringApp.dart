@@ -8,15 +8,15 @@ String get historiaEmpresa => "Fundada en 1980, nuestra empresa de cultivo de ho
 "Nuestro compromiso con la sostenibilidad ha sido una constante a lo largo de las décadas. Desde la gestión responsable de los recursos naturales hasta la implementación de prácticas agrícolas respetuosas con la biodiversidad, nos esforzamos por minimizar nuestro impacto ambiental y contribuir al bienestar de las comunidades locales." +
 "Como empresa de cultivo de hortalizas de dos generaciones, valoramos la tradición, la ética de trabajo y la dedicación a la calidad. Miramos hacia el futuro con la misma pasión y determinación que nos han guiado desde nuestros inicios, comprometidos a seguir siendo un referente en la producción de hortalizas frescas y sostenibles para las generaciones venideras." ;
 
-String get coffeeStr => "Cafes";
+String get perejilString => "Perejil";
 
-String get drinkStr => "Bebidas";
+String get ajoTiernoString => "Ajo Tierno";
 
-String get cakeStr => "Pasteles";
+String get alcachofaString => "Alcachofas";
 
-String get sandwichStr => "Sandwiches";
+String get apioString => "Apio";
 
-String get homeStr => "Explora";
+String get berzaRizadaString => "Berza Rizada";
 
 String get sectionMenuTitleStr => "Nuestra Carte";
 

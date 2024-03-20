@@ -8,13 +8,13 @@ class Menu {
 
 List<Menu> menu = [
   Menu(
-    title: coffeeStr,
+    title: ajoTiernoString,
     image: "assets/images/ajoTiernoMenu.jpg",
   ),
-  Menu(title: cakeStr, image: "assets/images/ramoPerejilMenu.jpg"),
-  Menu(title: coffeeStr, image: "assets/images/alcachofaMenu.jpg"),
-  Menu(title: coffeeStr, image: "assets/images/apioMenu.jpg"),
-  Menu(title: coffeeStr, image: "assets/images/colRizadaMenu.jpg"),
+  Menu(title: perejilString, image: "assets/images/ramoPerejilMenu.jpg"),
+  Menu(title: alcachofaString, image: "assets/images/alcachofaMenu.jpg"),
+  Menu(title: apioString, image: "assets/images/apioMenu.jpg"),
+  Menu(title: berzaRizadaString, image: "assets/images/colRizadaMenu.jpg"),
 
 
 ];

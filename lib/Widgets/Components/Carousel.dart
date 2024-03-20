@@ -62,17 +62,17 @@ class _CarouselState extends State<Carousel> {
               }),
           carouselController: _controller,
         ),
-        Positioned.fill(
+       /* Positioned.fill(
             child: Center(
           child: Text(
-            carousel[_current].title,
+            //carousel[_current].title,
             style: TextStyle(
               letterSpacing: responsiveApp.letterSpacingCarouselWidth,
               fontFamily: 'Electrolize',
               fontSize: responsiveApp.headline3,
             ),
           ),
-        )),
+        )),*/
         isMobileAndTablet(context)
             ? Container()
             : Positioned.fill(
