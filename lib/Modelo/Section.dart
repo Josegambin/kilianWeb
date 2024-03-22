@@ -1,6 +1,5 @@
 import 'package:flutter/material.dart';
 
-import '../Pages/Values/StringApp.dart';
 import 'Product.dart';
 
 class Section {

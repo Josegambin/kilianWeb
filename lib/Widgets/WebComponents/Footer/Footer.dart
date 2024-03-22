@@ -1,9 +1,8 @@
 
 import 'package:flutter/material.dart';
-import 'package:google_maps_flutter/google_maps_flutter.dart';
+
 import '../../../Pages/Values/ResponsiveApp.dart';
 import '../../../Pages/Values/StringApp.dart';
-import 'BottomColum.dart';
 import 'InfoText.dart';
 
 @immutable

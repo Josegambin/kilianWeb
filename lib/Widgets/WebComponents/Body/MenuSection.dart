@@ -3,9 +3,7 @@ import 'package:scroll_to_index/scroll_to_index.dart';
 
 import '../../../Modelo/Menu.dart';
 import '../../../Pages/Values/ResponsiveApp.dart';
-import '../../../Pages/Values/StringApp.dart';
 import 'Container/MenuContainer.dart';
-import 'Container/SectionContainer.dart';
 
 class MenuSection extends StatelessWidget {
   late AutoScrollController _scrollController;
