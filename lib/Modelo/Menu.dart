@@ -9,7 +9,7 @@ class Menu {
 List<Menu> menu = [
   Menu(
     title: ajoTiernoString,
-    image: "assets/images/ajoTiernoMenu.jpg",
+    image: "assets/images/ajotiernoMenu.jpg",
   ),
   Menu(title: perejilString, image: "assets/images/ramoPerejilMenu.jpg"),
   Menu(title: alcachofaString, image: "assets/images/alcachofaMenu.jpg"),

@@ -81,9 +81,10 @@ class _HomePageState extends State<HomePage> {
         child: ListView(controller: autoScrollController, children: [
           Carousel(),
           SectionListView(autoScrollController, responsiveApp),
+          Footer(responsiveApp)
           // ... Otros widgets
-          isMobileAndTablet(context) ? const SizedBox.shrink() : Footer(
-              responsiveApp),
+          /*isMobileAndTablet(context) ? const SizedBox.shrink() : Footer(
+              responsiveApp),*/
         ]),
       ),
     );

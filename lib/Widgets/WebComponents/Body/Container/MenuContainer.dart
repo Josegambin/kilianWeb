@@ -30,17 +30,17 @@ class _MenuCardState extends State<MenuCard> {
           child: Stack(
             children: [
               ClipRRect(
-                borderRadius: BorderRadius.circular(12.0),
+                borderRadius: BorderRadius.circular(30.0),
                 child: Container(
-                  width: responsiveApp.menuImageWidth,
+                  //width: responsiveApp.menuImageWidth,
                   //height: responsiveApp.menuImageHeight,
                   child: Image.asset(
                     menu[widget.index].image,
-                    fit: BoxFit.cover,
+                    //fit: BoxFit.cover,
                   ),
                 ),
               ),
-              Positioned(
+              /*Positioned(
                 bottom: 0,
                 left: 0,
                 right: 0,
@@ -52,7 +52,7 @@ class _MenuCardState extends State<MenuCard> {
                     style: Theme.of(context).textTheme.bodyLarge?.copyWith(color: Colors.black),
                   ),
                 ),
-              ),
+              ),*/
             ],
           ),
         ),
