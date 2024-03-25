@@ -33,11 +33,12 @@ class _HomePageState extends State<HomePage> {
   @override
   void initState() {
     autoScrollController = AutoScrollController(
+
         viewportBoundaryGetter: () =>
-            Rect.fromLTRB(0, 0, 0, MediaQuery
+            Rect.fromLTRB(0, 0, MediaQuery
                 .of(context)
-                .padding
-                .bottom),
+                .size.width,
+            MediaQuery.of(context).size.height),
         axis: Axis.vertical);
     autoScrollController.addListener(_scrollListener);
     super.initState();
@@ -59,7 +60,8 @@ class _HomePageState extends State<HomePage> {
       floatingActionButton: Visibility(
         visible: _isVisible,
         child: FloatingActionButton(
-          onPressed: () => {autoScrollController.scrollToIndex(0)},
+          onPressed: () => {autoScrollController.animateTo(0,  duration: Duration(milliseconds: 500),
+          curve: Curves.easeInOut,)},
           child: const Icon(Icons.arrow_upward),
         ),
       ),

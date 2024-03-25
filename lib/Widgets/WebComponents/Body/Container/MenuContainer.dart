@@ -26,17 +26,20 @@ class _MenuCardState extends State<MenuCard> {
         onTap: () => widget.onPress(),
         child: Container(
           width: 40.0,
-          height: responsiveApp.menuImageHeight,
+          //height: responsiveApp.menuImageHeight,
           child: Stack(
             children: [
               ClipRRect(
-                borderRadius: BorderRadius.circular(30.0),
+                borderRadius: BorderRadius.circular(5.0),
                 child: Container(
-                  //width: responsiveApp.menuImageWidth,
-                  //height: responsiveApp.menuImageHeight,
+                  //padding: EdgeInsets.zero,
+                  width: responsiveApp.menuImageWidth,
+                  height: responsiveApp.menuImageHeight,
                   child: Image.asset(
+                   // height: 300.0,
+                    //width: 205.0,
                     menu[widget.index].image,
-                    //fit: BoxFit.cover,
+                    fit: BoxFit.cover,
                   ),
                 ),
               ),

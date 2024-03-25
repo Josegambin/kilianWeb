@@ -51,13 +51,13 @@ class ResponsiveApp {
   get carouselRadiusWidth => setWidth(10);
 
   //Images
-  get menuImageHeight => setHeight(60);
+  get menuImageHeight => setHeight(80);
 
-  get menuImageWidth => setWidth(60);
+  get menuImageWidth => setWidth(80);
 
   get tabImageHeight => setHeight(30);
 
-  get menuHeight => setHeight(850);
+  get menuHeight => setHeight(450);
 
   get opacityHeight => setHeight(252);
 
