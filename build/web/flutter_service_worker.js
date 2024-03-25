@@ -3,17 +3,14 @@ const MANIFEST = 'flutter-app-manifest';
 const TEMP = 'flutter-temp-cache';
 const CACHE_NAME = 'flutter-app-cache';
 
-const RESOURCES = {"assets/AssetManifest.bin": "aff1426532dae39f0c163463c5772f18",
-"assets/AssetManifest.bin.json": "7441b7724016ce5ec299d86a626d3055",
-"assets/AssetManifest.json": "c1a3a44f22ff7c60e42f5e9a3f47a4a1",
+const RESOURCES = {"assets/AssetManifest.bin": "a9923de042afa0f64ebf8fea83e6763f",
+"assets/AssetManifest.bin.json": "ca92bcb834375b22338e7bb663a181cd",
+"assets/AssetManifest.json": "93338148d530a30ad47a0206ce9a94d2",
 "assets/assets/images/ajotiernoMenu.jpg": "b9d7f841a2dff1ae63f1ab837751b64f",
 "assets/assets/images/alcachofaMenu.jpg": "6649fca42063b66454f1b7a8af5d3915",
 "assets/assets/images/apioMenu.jpg": "4621af3f9cf1cf24dcc9a42022d84527",
 "assets/assets/images/colRizadaMenu.jpg": "73d8936a06f460fa42d84c57714397e4",
 "assets/assets/images/fondoWeb.jpg": "63e1fa77ed61b95940202e0ce4f01066",
-"assets/assets/images/icon1.jpg": "8378849fb9e821990bad68163649c7e0",
-"assets/assets/images/image1.jpg": "5ab5cb674d43680fc4189b6d9fb8165e",
-"assets/assets/images/image2.jpg": "fe11db8a911a959f48e715dcfd3acf69",
 "assets/assets/images/imageMenu1.jpg": "91713acf2f4a4d61497543d5964c3606",
 "assets/assets/images/imageMenu2.jpg": "33b29d65ad054762763ab66dd4ecf698",
 "assets/assets/images/perejilCarrousel1.jpg": "415466877483f3af3d16cbb2903444ca",
@@ -47,9 +44,9 @@ const RESOURCES = {"assets/AssetManifest.bin": "aff1426532dae39f0c163463c5772f18
 "icons/Icon-512.png": "96e752610906ba2a93c65f8abe1645f1",
 "icons/Icon-maskable-192.png": "c457ef57daa1d16f64b27b786ec2ea3c",
 "icons/Icon-maskable-512.png": "301a7604d45b3e739efc881eb04896ea",
-"index.html": "29496549b36747f43f769a8795b33c9b",
-"/": "29496549b36747f43f769a8795b33c9b",
-"main.dart.js": "d07ed173adcc47c6c3377c721c44f876",
+"index.html": "978e337bd0679fa83fc6b3f0236d708a",
+"/": "978e337bd0679fa83fc6b3f0236d708a",
+"main.dart.js": "e0c14ed7c3185e9ddc505bca5bcd3a1d",
 "manifest.json": "fc5ac8208e70c0b6cb8a8c7652575032",
 "version.json": "4b9febb72b966145221a183882cbf8b8"};
 // The application shell files that are downloaded before a service worker can
