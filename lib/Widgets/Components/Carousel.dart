@@ -20,11 +20,14 @@ class _CarouselState extends State<Carousel> {
     return carousel
         .map(
           (element) => Container(
-        margin: EdgeInsets.only(top: 20.0), // Ajusta el valor según lo que necesites
+            width: 2220.0,
+
+        margin: EdgeInsets.only(top: 40.0), // Ajusta el valor según lo que necesites
         child: ClipRRect(
           borderRadius:
           BorderRadius.circular(responsiveApp.carouselRadiusWidth),
           child: Image.asset(
+            //height: 10.0,
             element.image,
             fit: BoxFit.cover,
           ),
@@ -43,13 +46,12 @@ class _CarouselState extends State<Carousel> {
         CarouselSlider(
           items: imageSlider,
           options: CarouselOptions(
+            height: 500.0,
               scrollPhysics: isMobileAndTablet(context)
                   ? const PageScrollPhysics()
                   : const NeverScrollableScrollPhysics(),
               enlargeCenterPage: true,
               autoPlay: true,
-
-
               //relacion entre el alto y el ancho de la imagen
               aspectRatio: 18/7,
               onPageChanged: (index, reason) {
