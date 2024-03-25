@@ -25,14 +25,14 @@ class _MenuCardState extends State<MenuCard> {
       child: InkWell(
         onTap: () => widget.onPress(),
         child: Container(
-          width: responsiveApp.menuImageWidth,
+          width: 40.0,
           height: responsiveApp.menuImageHeight,
           child: Stack(
             children: [
               ClipRRect(
                 borderRadius: BorderRadius.circular(12.0),
                 child: Container(
-                 // width: responsiveApp.menuImageWidth,
+                  width: responsiveApp.menuImageWidth,
                   //height: responsiveApp.menuImageHeight,
                   child: Image.asset(
                     menu[widget.index].image,
